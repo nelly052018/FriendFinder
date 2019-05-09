@@ -31,7 +31,7 @@
                         placeholder="Enter Photo URL">
                 </div>
                 <div class="form-group">
-                    <label for="que1">Example select</label>
+                    <label for="que1">1. Your mind is always buzzing with unexplored ideas and plans.</label>
                     <select class="form-control" id="que1">
                         <option>Select an option</option>
                         <option>1</option>
@@ -40,7 +40,8 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
-                    <label for="que2">Example select</label>
+                    <label for="que2">2. Generally speaking, you rely more on your experience than your imagination.
+                    </label>
                     <select class="form-control" id="que2">
                         <option>Select an option</option>
                         <option>1</option>
@@ -49,7 +50,8 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
-                    <label for="que3">Example select</label>
+                    <label for="que3">3. You find it easy to stay relaxed and focused even when there is some pressure.
+                    </label>
                     <select class="form-control" id="que3">
                         <option>Select an option</option>
                         <option>1</option>
@@ -58,7 +60,8 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
-                    <label for="que4">Example select</label>
+                    <label for="que4">4. You rarely do something just out of sheer curiosity.
+                    </label>
                     <select class="form-control" id="que4">
                         <option>Select an option</option>
                         <option>1</option>
@@ -67,7 +70,8 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
-                    <label for="que5">Example select</label>
+                    <label for="que5">5. People can rarely upset you.
+                    </label>
                     <select class="form-control" id="que5">
                         <option>Select an option</option>
                         <option>1</option>
@@ -76,7 +80,7 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
-                    <label for="que6">Example select</label>
+                    <label for="que6">6. It is often difficult for you to relate to other people’s feelings.</label>
                     <select class="form-control" id="que6">
                         <option>Select an option</option>
                         <option>1</option>
@@ -85,7 +89,8 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
-                    <label for="que7">Example select</label>
+                    <label for="que7">7. In a discussion, truth should be more important than people’s
+                        sensitivities.</label>
                     <select class="form-control" id="que7">
                         <option>Select an option</option>
                         <option>1</option>
@@ -94,7 +99,7 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
-                    <label for="que8">Example select</label>
+                    <label for="que8">8. You rarely get carried away by fantasies and ideas.</label>
                     <select class="form-control" id="que8">
                         <option>Select an option</option>
                         <option>1</option>
@@ -103,7 +108,9 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
-                    <label for="que9">Example select</label>
+                    <label for="que9">9. You think that everyone’s views should be respected regardless of whether they
+                        are
+                        supported by facts or not.</label>
                     <select class="form-control" id="que9">
                         <option>Select an option</option>
 
@@ -113,7 +120,7 @@
                         <option>4</option>
                         <option>5</option>
                     </select>
-                    <label for="que10">Example select</label>
+                    <label for="que10">10. You feel more energetic after spending time with a group of people</label>
                     <select class="form-control" id="que10">
                         <option>Select an option</option>
                         <option>1</option>
@@ -133,17 +140,16 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Best Match</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
+                    <p></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
@@ -183,6 +189,7 @@
                 $.post("/api/friends", newFriends, function (data) {
                     console.log(data)
                     $('.modal').modal('toggle')
+                    $(".modal-body")
                 });
 
 
