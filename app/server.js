@@ -2,6 +2,7 @@ var express = require("express");
 
 var bodyParser = require("body-parser")
 var app = express();
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -13,7 +14,7 @@ htmlRoute(app)
 
 require("./routing/apiRoutes")(app)
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 
 
